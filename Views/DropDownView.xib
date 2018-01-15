@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view alpha="0.29999999999999999" contentMode="scaleToFill" id="iN0-l3-epB" customClass="DropDownView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check" translatesAutoresizingMaskIntoConstraints="NO" id="gA1-Qg-3JQ">
+                    <rect key="frame" x="284" y="16" width="28" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="56W-Rg-F5I"/>
+                        <constraint firstAttribute="width" secondItem="gA1-Qg-3JQ" secondAttribute="height" multiplier="1:1" id="v8M-rd-git"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DFL-a9-gQT">
+                    <rect key="frame" x="61" y="8" width="215" height="45"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="n7d-av-LHs">
+                    <rect key="frame" x="10" y="14" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="Ub6-bE-yx6"/>
+                        <constraint firstAttribute="width" secondItem="n7d-av-LHs" secondAttribute="height" multiplier="1:1" id="X8B-16-rOE"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.87973905456852797" green="0.87973905456852797" blue="0.87973905456852797" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="gA1-Qg-3JQ" firstAttribute="leading" secondItem="DFL-a9-gQT" secondAttribute="trailing" constant="8" id="4jO-p4-6ow"/>
+                <constraint firstAttribute="bottom" secondItem="DFL-a9-gQT" secondAttribute="bottom" constant="7" id="4ne-xM-tna"/>
+                <constraint firstItem="DFL-a9-gQT" firstAttribute="leading" secondItem="n7d-av-LHs" secondAttribute="trailing" constant="19" id="HVH-Lg-cKj"/>
+                <constraint firstItem="n7d-av-LHs" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="NpT-0T-ukj"/>
+                <constraint firstItem="gA1-Qg-3JQ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="baK-YQ-Jx3"/>
+                <constraint firstItem="n7d-av-LHs" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="f2s-eE-9FP"/>
+                <constraint firstAttribute="trailing" secondItem="gA1-Qg-3JQ" secondAttribute="trailing" constant="8" id="kad-uT-Enb"/>
+                <constraint firstItem="DFL-a9-gQT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="yRc-hM-kNK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="dropDownCheckImage" destination="gA1-Qg-3JQ" id="PnD-wh-AZR"/>
+                <outlet property="dropDownImage" destination="n7d-av-LHs" id="5lf-i3-jQY"/>
+                <outlet property="dropDownTitle" destination="DFL-a9-gQT" id="ERJ-33-6a0"/>
+            </connections>
+            <point key="canvasLocation" x="-8" y="-325"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="check" width="24" height="24"/>
+    </resources>
+</document>
