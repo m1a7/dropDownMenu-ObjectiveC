@@ -12,7 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view alpha="0.29999999999999999" contentMode="scaleToFill" id="iN0-l3-epB" customClass="DropDownView">
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DropDownView">
             <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -37,7 +37,6 @@
                     </constraints>
                 </imageView>
             </subviews>
-            <color key="backgroundColor" red="0.87973905456852797" green="0.87973905456852797" blue="0.87973905456852797" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="gA1-Qg-3JQ" firstAttribute="leading" secondItem="DFL-a9-gQT" secondAttribute="trailing" constant="8" id="4jO-p4-6ow"/>
                 <constraint firstAttribute="bottom" secondItem="DFL-a9-gQT" secondAttribute="bottom" constant="7" id="4ne-xM-tna"/>

@@ -82,7 +82,15 @@ static inline void delay(NSTimeInterval delay, dispatch_block_t block) {
     self.dropdownMenu = [[MKDropdownMenu alloc] initWithFrame:CGRectMake(0, 0, sizeOfString.width+specialOffset, sizeOfString.height)];
     self.dropdownMenu.dataSource = self;
     self.dropdownMenu.delegate   = self;
-    self.dropdownMenu.alpha = 0.5;
+    
+    
+    
+    
+    
+    //self.dropdownMenu.alpha = 0.0;
+    self.dropdownMenu.presentingView.alpha = 0.0f;
+    
+    
     //self.dropdownMenu.backgroundDimmingOpacity     = -0.67;
     self.dropdownMenu.dropdownShowsTopRowSeparator = NO;
     self.dropdownMenu.dropdownBouncesScroll        = NO;
@@ -161,12 +169,12 @@ static inline void delay(NSTimeInterval delay, dispatch_block_t block) {
 
 // Return UIColor which we set in row.backgroundColor
 - (UIColor *)dropdownMenu:(MKDropdownMenu *)dropdownMenu backgroundColorForRow:(NSInteger)row forComponent:(NSInteger)component {
-    return [UIColor lightGrayColor];
+    return [UIColor clearColor];
 }
 
 // Return UIColor which we set in state when row is touching.
 - (UIColor *)dropdownMenu:(MKDropdownMenu *)dropdownMenu backgroundColorForHighlightedRowsInComponent:(NSInteger)component {
-    return [UIColor darkGrayColor];
+    return [UIColor lightGrayColor];
 }
 
 // Here store implemention, - our reaction on touch on row
